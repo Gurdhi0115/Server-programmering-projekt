@@ -1,5 +1,5 @@
-DROP DATABASE IF EXISTS dbIntegritet;
-CREATE DATABASE dbHibernateBok;
+DROP DATABASE IF EXISTS dbHibernateBook;
+CREATE DATABASE dbHibernateBook;
 USE dbHibernateBook;
 
 CREATE TABLE tblBook (
@@ -21,7 +21,7 @@ CREATE TABLE tblLoan (
     fldDateOfGiveBack DATE NOT NULL,
     burrowerId INT,
     bookId INT,
-    FOREIGN KEY (burrowerId) REFERENCES tblBurrower(fldId),
-    FOREIGN KEY (bookId) REFERENCES tblBook(fldId)
+    FOREIGN KEY (burrowerId) REFERENCES tblBurrower(fldBurrowerId),
+    FOREIGN KEY (bookId) REFERENCES tblBook(fldBookId)
 );
 
