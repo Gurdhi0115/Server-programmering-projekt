@@ -1,4 +1,4 @@
-package se.yrgo.Sererprogramming.projekt;
+package se.yrgo.Serverprogramming.projekt;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

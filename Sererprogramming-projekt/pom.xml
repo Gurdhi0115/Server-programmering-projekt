@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>se.yrgo</groupId>
-	<artifactId>Sererprogramming-projekt</artifactId>
+	<artifactId>Serverprogramming-projekt</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Sererprogramming-projekt</name>
 	<description>Group projekt</description>
