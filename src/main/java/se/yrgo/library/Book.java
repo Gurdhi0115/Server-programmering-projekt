@@ -1,4 +1,4 @@
-package Serverprogrammering;
+package se.yrgo.library;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
