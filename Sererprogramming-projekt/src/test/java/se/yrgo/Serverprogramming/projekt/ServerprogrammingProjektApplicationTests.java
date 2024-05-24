@@ -1,10 +1,10 @@
-package se.yrgo.Sererprogramming.projekt;
+package se.yrgo.Serverprogramming.projekt;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SererprogrammingProjektApplicationTests {
+class ServerprogrammingProjektApplicationTests {
 
 	@Test
 	void contextLoads() {
