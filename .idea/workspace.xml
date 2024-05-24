@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ef4184e-ef70-43e5-b2a8-e95e7b83fec0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Sererprogramming-projekt/src/main/java/se/yrgo/domain/Resporitory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sererprogramming-projekt/src/main/java/se/yrgo/domain/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +101,7 @@
       <workItem from="1716533432281" duration="48000" />
       <workItem from="1716533512065" duration="137000" />
       <workItem from="1716533665087" duration="40000" />
-      <workItem from="1716534834628" duration="721000" />
+      <workItem from="1716534834628" duration="1619000" />
     </task>
     <servers />
   </component>
