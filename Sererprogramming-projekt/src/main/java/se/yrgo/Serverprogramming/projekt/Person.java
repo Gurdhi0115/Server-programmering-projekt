@@ -7,28 +7,30 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import java.util.List;
-import se.yrgo.Serverprogramming.projekt.Book;
 
 @Entity
 public class Person {
-    @GeneratedValue(strategy = GenerationType.AUTO)
+
     @Id
-    private long id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+
     private String name;
     private String email;
 
     @OneToMany(mappedBy = "borrower", cascade = CascadeType.ALL)
-    private List<Book> borrowedBooks;
+    private List<Loans> loans; // Använd Loans för att representera relationen
 
+    // Konstruktor
     public Person() {}
 
     // Getters and Setters
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -48,12 +50,12 @@ public class Person {
         this.email = email;
     }
 
-    public List<Book> getBorrowedBooks() {
-        return borrowedBooks;
+    public List<Loans> getLoans() {
+        return loans;
     }
 
-    public void setBorrowedBooks(List<Book> borrowedBooks) {
-        this.borrowedBooks = borrowedBooks;
+    public void setLoans(List<Loans> loans) {
+        this.loans = loans;
     }
 
     @Override

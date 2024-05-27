@@ -12,7 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class BookController {
     @Autowired
     private BookRespirotory data;
-    private personrespirotory personrespirotory;
+    private PersonRespirtory personrespirotory;
 
     // This method will save the book into the database
     @RequestMapping(value="/newBook.html", method=RequestMethod.POST)
