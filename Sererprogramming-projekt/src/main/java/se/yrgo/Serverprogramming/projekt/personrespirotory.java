@@ -6,4 +6,5 @@ import se.yrgo.Serverprogramming.projekt.Person;
 
 @Repository
 public interface personrespirotory extends JpaRepository<Person, Long> {
+
 }
