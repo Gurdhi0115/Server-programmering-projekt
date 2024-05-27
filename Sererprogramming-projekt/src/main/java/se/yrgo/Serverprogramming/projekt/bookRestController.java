@@ -8,15 +8,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import se.yrgo.Serverprogramming.projekt.Book;
-import se.yrgo.Serverprogramming.projekt.bookRespirotory;
-import se.yrgo.Serverprogramming.projekt.bookList;
 
 @RestController
 public class BookRestController {
 
     @Autowired
-    private bookRespirotory bookRepository;
+    private BookRespirotory bookRepository;
 
     @RequestMapping("/books")
     public bookList allBooks() {

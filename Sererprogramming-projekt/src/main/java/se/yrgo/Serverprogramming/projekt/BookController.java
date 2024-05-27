@@ -6,14 +6,12 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
-import se.yrgo.Serverprogramming.projekt.Book;
-import se.yrgo.Serverprogramming.projekt.bookRespirotory;
 
 @Controller
 @RequestMapping("/website/books")
 public class BookController {
     @Autowired
-    private bookRespirotory data;
+    private BookRespirotory data;
     private personrespirotory personrespirotory;
 
     // This method will save the book into the database
