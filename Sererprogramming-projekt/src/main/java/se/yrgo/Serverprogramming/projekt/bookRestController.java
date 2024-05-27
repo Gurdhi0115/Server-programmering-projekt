@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class BookRestController {
 
     @Autowired
-    private BookRespirotory bookRepository;
+    private BookRepository bookRepository;
 
     @RequestMapping("/books")
     public bookList allBooks() {

@@ -11,7 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping("/website/books")
 public class BookController {
     @Autowired
-    private BookRespirotory data;
+    private BookRepository data;
     private PersonRespirtory personrespirotory;
 
     // This method will save the book into the database
