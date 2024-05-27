@@ -1,2 +1,4 @@
-package se.yrgo.Serverprogramming.projekt;public class Loans {
+package se.yrgo.Serverprogramming.projekt;
+
+public class Loans {
 }
