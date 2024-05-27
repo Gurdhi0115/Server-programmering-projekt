@@ -4,7 +4,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
+import java.util.List;
 
 @Entity
 public class Book {
@@ -19,8 +20,8 @@ public class Book {
     private int publishedYear;
     private String status;
 
-    @ManyToOne
-    private Borrower borrower;
+    @OneToMany(mappedBy = "book")
+    private List<Loans> loans; // Relation till Loans istället för Person
 
     // Getters and Setters
 
@@ -72,11 +73,11 @@ public class Book {
         this.status = status;
     }
 
-    public Borrower getBorrower() {
-        return borrower;
+    public List<Loans> getLoans() {
+        return loans;
     }
 
-    public void setBorrower(Borrower borrower) {
-        this.borrower = borrower;
+    public void setLoans(List<Loans> loans) {
+        this.loans = loans;
     }
 }
