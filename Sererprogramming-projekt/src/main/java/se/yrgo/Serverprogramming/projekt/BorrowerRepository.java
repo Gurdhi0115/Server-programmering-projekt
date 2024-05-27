@@ -1,4 +1,6 @@
 package se.yrgo.Serverprogramming.projekt;
 
-public interface BorrowerRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface BorrowerRepository extends JpaRepository<Borrower, Long> {
 }
