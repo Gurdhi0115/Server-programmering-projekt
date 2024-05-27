@@ -4,31 +4,31 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
+
+@Entity
 public class Book {
-    @GeneratedValue(strategy = GenerationType.AUTO)
+
     @Id
-    private long id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+
     private String title;
     private String author;
     private String isbn;
     private int publishedYear;
     private String status;
-    private Person borrower;
 
-    public Book() {
-    }
+    @ManyToOne
+    private Borrower borrower;
 
-    @Override
-    public String toString() {
-        return this.title + " by " + this.author + " (Published: " + this.publishedYear + ")";
-    }
+    // Getters and Setters
 
-    // Getters and Setters (optional, but recommended for accessing private fields)
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -72,11 +72,11 @@ public class Book {
         this.status = status;
     }
 
-    public Person getBorrower() {
+    public Borrower getBorrower() {
         return borrower;
     }
 
-    public void setBorrower(Person borrower) {
+    public void setBorrower(Borrower borrower) {
         this.borrower = borrower;
     }
 }
