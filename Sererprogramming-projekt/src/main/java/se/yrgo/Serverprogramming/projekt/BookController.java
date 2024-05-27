@@ -7,12 +7,22 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.time.LocalDate;
+
 @Controller
 @RequestMapping("/website/books")
 public class BookController {
+
+    private final BookRepository data;
+    private final PersonRepository personRepository;
+    private final LoansRepository loansRepository;
+
     @Autowired
-    private BookRepository data;
-    private PersonRespirtory personrespirotory;
+    public BookController(BookRepository data, PersonRepository personRepository, LoansRepository loansRepository) {
+        this.data = data;
+        this.personRepository = personRepository;
+        this.loansRepository = loansRepository;
+    }
 
     // This method will save the book into the database
     @RequestMapping(value="/newBook.html", method=RequestMethod.POST)
@@ -43,10 +53,13 @@ public class BookController {
     @RequestMapping(value="/borrow/{bookId}/by/{personId}", method=RequestMethod.POST)
     public String borrowBook(@PathVariable("bookId") Long bookId, @PathVariable("personId") Long personId) {
         Book book = data.findById(bookId).orElseThrow(() -> new IllegalArgumentException("Invalid book Id:" + bookId));
-        Person person = personrespirotory.findById(personId).orElseThrow(() -> new IllegalArgumentException("Invalid person Id:" + personId));
+        Person person = personRepository.findById(personId).orElseThrow(() -> new IllegalArgumentException("Invalid person Id:" + personId));
 
-        book.setBorrower(person);
-        data.save(book);
+        Loans loan = new Loans();
+        loan.setBook(book);
+        loan.setBorrower(person);
+        loan.setLoanDate(LocalDate.now());
+        loansRepository.save(loan);
 
         return "redirect:/website/books/list.html";
     }
