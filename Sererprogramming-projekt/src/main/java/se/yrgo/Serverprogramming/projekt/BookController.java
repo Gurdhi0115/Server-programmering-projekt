@@ -14,6 +14,7 @@ import se.yrgo.Serverprogramming.projekt.bookRespirotory;
 public class BookController {
     @Autowired
     private bookRespirotory data;
+    private personrespirotory personrespirotory;
 
     // This method will save the book into the database
     @RequestMapping(value="/newBook.html", method=RequestMethod.POST)
@@ -39,5 +40,16 @@ public class BookController {
     public ModelAndView showBookByTitle(@PathVariable("title") String title) {
         Book book = data.findByTitle(title);
         return new ModelAndView("bookDetail", "book", book);
+    }
+
+    @RequestMapping(value="/borrow/{bookId}/by/{personId}", method=RequestMethod.POST)
+    public String borrowBook(@PathVariable("bookId") Long bookId, @PathVariable("personId") Long personId) {
+        Book book = data.findById(bookId).orElseThrow(() -> new IllegalArgumentException("Invalid book Id:" + bookId));
+        Person person = personrespirotory.findById(personId).orElseThrow(() -> new IllegalArgumentException("Invalid person Id:" + personId));
+
+        book.setBorrower(person);
+        data.save(book);
+
+        return "redirect:/website/books/list.html";
     }
 }

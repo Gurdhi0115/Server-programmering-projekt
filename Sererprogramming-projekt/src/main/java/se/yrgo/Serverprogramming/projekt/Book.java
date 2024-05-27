@@ -13,8 +13,10 @@ public class Book {
     private String isbn;
     private int publishedYear;
     private String status;
+    private Person borrower;
 
-    public Book() {}
+    public Book() {
+    }
 
     @Override
     public String toString() {
@@ -68,5 +70,13 @@ public class Book {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public Person getBorrower() {
+        return borrower;
+    }
+
+    public void setBorrower(Person borrower) {
+        this.borrower = borrower;
     }
 }
