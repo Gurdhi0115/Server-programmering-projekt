@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class BookRestController {
+public class bookRestController {
 
     @Autowired
     private BookRepository bookRepository;
