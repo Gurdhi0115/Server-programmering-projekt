@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ef4184e-ef70-43e5-b2a8-e95e7b83fec0" name="Changes" comment="" />
+    <list default="true" id="3ef4184e-ef70-43e5-b2a8-e95e7b83fec0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,6 +77,19 @@
   }
 }</component>
   <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Server-programmering-projekt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Server-programmering-projekt" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ServerProgrammeringProjektApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="Serverprogrammering.ServerProgrammeringProjektApplication" />
@@ -124,6 +139,8 @@
       <workItem from="1716828533139" duration="10000" />
       <workItem from="1716828999200" duration="50000" />
       <workItem from="1716829985151" duration="11000" />
+      <workItem from="1716876976712" duration="18000" />
+      <workItem from="1716877064077" duration="11000" />
     </task>
     <servers />
   </component>
