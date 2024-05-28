@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3ef4184e-ef70-43e5-b2a8-e95e7b83fec0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sererprogramming-projekt/src/main/webapp/WEB-INF/jsp/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sererprogramming-projekt/src/main/webapp/WEB-INF/jsp/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sererprogramming-projekt/src/main/webapp/WEB-INF/jsp/newBook.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sererprogramming-projekt/src/main/webapp/WEB-INF/jsp/newBook.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,6 +143,7 @@
       <workItem from="1716829985151" duration="11000" />
       <workItem from="1716876976712" duration="18000" />
       <workItem from="1716877064077" duration="11000" />
+      <workItem from="1716878561968" duration="694000" />
     </task>
     <servers />
   </component>
